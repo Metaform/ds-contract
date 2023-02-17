@@ -1,0 +1,25 @@
+@startuml "hub-request-processing"
+!pragma layout smetana
+
+!include diagram.styles.puml
+
+'Consumer -> Provider : JWS w/ DID and Verifiable Credentials
+Provider -> Consumer: ContractAgreementMessage
+Consumer -> Provider: OK
+
+group State: PROVIDER_AGREED
+Consumer -> Registry as "Registry": Memorialize event
+Registry -> Consumer: Signature
+end
+
+Consumer->Provider: ContractAgreementVerificationMessage
+Provider -> Consumer: OK
+
+group State: CONSUMER_VERIFIED
+Provider -> Registry: Memorialize event
+Registry -> Provider: Signature
+end
+
+Provider -> Consumer: OK: ContractAgreementFinalizationMessage
+
+@enduml
