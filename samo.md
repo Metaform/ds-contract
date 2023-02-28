@@ -14,7 +14,7 @@ Events:
 
 SAMO is designed as a message exchange protocol that can be layered on top of the IDS Dataspace _**contract negotiation protocol**_.
 
-## Design Principles
+# Design Principles
 
 1. Parties memorialize events with a Registry. Events contain data with a GUID. For example, a contract signing event may include the Contract Agreement.
 2. The purpose of memorialization is to provide proof that an event occurred and that the data associated with the event has not been tampered with.
