@@ -1,7 +1,7 @@
 # Signing and Memorialization Overlay (SAMO)
 
 Parties in a dataspace may wish to memorialize a Contract Agreement with one or more third-party `Registry` services. A Registry is a trusted actor that can
-be used to provide proof that an event occurred at a given time and has not been tampered with. For example, a consumer may memorialize that a signed __Contract Agreement__ was
+be used to provide proof that an event occurred at a given time and has not been tampered with. For example, a consumer may memorialize that a signed _Contract Agreement_ was
 received from a provider. Likewise, a provider may memorialize that a signed _Contract Agreement verification_ was received from a consumer. The data to be memorialized is termed
 an **_event_**.
 
